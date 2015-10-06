@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Moore Props</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <!-- ****** faviconit.com favicons ****** -->
+        <link rel="shortcut icon" href="/faviconit/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="/faviconit/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="/faviconit/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="/faviconit/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/faviconit/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="/faviconit/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/faviconit/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/faviconit/favicon-16.png">
+        <!-- Studid apple touch icons -->
+        <link rel="apple-touch-icon" href="/faviconit/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/faviconit/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/faviconit/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/faviconit/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/faviconit/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/faviconit/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/faviconit/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/faviconit/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/faviconit/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="/faviconit/favicon-144.png">
+        <meta name="msapplication-config" content="/faviconit/browserconfig.xml">
+        <!-- ****** faviconit.com favicons ****** -->
+    </head>
+    
+    <body>
+    
+ <script>
+//Array of images which you want to show:
+var images=new Array('img/back1.jpg','img/back2.jpg','img/back3.jpg','img/back4.jpg');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('body')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,7000);   //time the image stays on screen
+    });
+}
+</script>
+    
+    <nav>
+        <h1><a href="index.html"><img src="img/Logo1.png" alt="Moore Props"></a></h1>
+        <br>
+        <ul id="cssmenu">
+            <li class='active'><a href='about.html'><span>About</span></a></li>
+            <li class='active'><a href='blog.html'><span>Portfolio</span></a></li>
+            <li class='active'><a href='contact.html'><span>Contact</span></a></li>
+        </ul>
+        <div id="social">
+            <a href="https://www.facebook.com/lucy.moore.9849?fref=ts"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/LucyJm007"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-paypal"></i></a>
+        </div>
+        </nav>
+    
+    
+    </body>
+</html>
