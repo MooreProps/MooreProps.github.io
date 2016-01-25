@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Moore Props</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+        <!-- ****** faviconit.com favicons ****** -->
+        <link rel="shortcut icon" href="/faviconit/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="/faviconit/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="/faviconit/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="/faviconit/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/faviconit/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="/faviconit/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/faviconit/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/faviconit/favicon-16.png">
+        <!-- Studid apple touch icons -->
+        <link rel="apple-touch-icon" href="/faviconit/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/faviconit/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/faviconit/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/faviconit/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/faviconit/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/faviconit/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/faviconit/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/faviconit/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/faviconit/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="/faviconit/favicon-144.png">
+        <meta name="msapplication-config" content="/faviconit/browserconfig.xml">
+        <!-- ****** faviconit.com favicons ****** -->
+    </head>
+    
+    <body>
+    
+ <script type="text/javascript">
+//Array of images which you want to show: Use path you want.
+var images=new Array('img/back1.jpg','img/back2.jpg','img/back3.jpg','img/back4.jpg');
+var nextimage=0;
+doSlideshow();
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('body')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500,function(){
+        setTimeout(doSlideshow,7000);   //time the image stays on screen
+    });
+}
+</script>
+    
+    <nav>
+        <h1><a href="index.html"><img src="img/Logo1.png" alt="Moore Props"></a></h1>
+        <br>
+        <ul id="cssmenu">
+            <li class='active'><a href='about.html'><span>About</span></a></li>
+            <li class='active'><a href='blog.html'><span>Portfolio</span></a></li>
+            <li class='active'><a href='contact.html'><span>Contact</span></a></li>
+        </ul>
+        <div id="social">
+        <a href="https://www.facebook.com/lucy.moore.9849?fref=ts"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/LucyJm007"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        </nav>
+        
+        <section id="container">
+            <article style="min-height:600px;">
+                <h2>Blog post</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ipsum orci, ultrices eu iaculis ut, molestie sit amet tortor. Suspendisse quis dolor enim. Pellentesque lacinia convallis purus in luctus. Sed ante eros, condimentum eu neque nec, rhoncus ornare tortor. Nunc quis vulputate odio. Sed aliquet leo quis tellus dignissim tincidunt. In aliquam, lorem eu rhoncus rhoncus, dui massa dapibus nunc, facilisis consequat tellus quam ut mi. Proin rutrum interdum purus, at dictum leo dictum eget.</p>
+                <img src="/img/blogPic2.jpg">
+
+                <p>Suspendisse eu ipsum vitae lorem faucibus rutrum eget at ligula. Etiam gravida non nisl vitae pharetra. Vivamus egestas blandit est sit amet viverra. Vestibulum ac elit volutpat, congue augue in, maximus eros. Nam tincidunt dolor dui, nec pharetra tellus fermentum ut. Ut tempor odio vitae ipsum ullamcorper, vel cursus eros malesuada. Duis consectetur eros vitae tellus cursus imperdiet. Mauris efficitur nec augue nec pulvinar. Vivamus justo nibh, iaculis sed maximus quis, sagittis a ipsum. Aliquam erat volutpat. Pellentesque luctus mauris ac lacus gravida, ut porttitor est lacinia. Nullam mauris erat, molestie vitae velit non, luctus congue ex. Nam dui orci, pharetra eu diam vel, gravida suscipit risus. Vestibulum tempor pulvinar ornare.</p>
+                <img src="/img/blogPic2.jpg">
+
+                <p>Integer interdum nulla mauris, in bibendum nisi rhoncus non. Morbi vitae libero dignissim, luctus est sed, sodales metus. Nunc sodales, lorem vitae maximus mattis, tellus ante fringilla felis, et pretium dui nunc eget velit. Aenean erat leo, finibus tempor ultricies a, dapibus a nulla. Pellentesque sit amet fringilla orci. Ut lacinia mauris orci, sed imperdiet turpis venenatis sit amet. Quisque venenatis orci at sem pretium ornare. Fusce orci dolor, facilisis at purus in, dignissim ultricies diam. In feugiat tincidunt tincidunt. Aliquam quis ex aliquam purus volutpat cursus. Praesent bibendum massa at odio vulputate, eget consequat nisi vulputate.</p>
+                <img src="/img/blogPic2.jpg">
+                <p>Proin egestas, sem vel condimentum efficitur, ex urna faucibus magna, ac varius lectus ex sit amet velit. Proin dapibus lectus vitae sollicitudin vulputate. In in leo faucibus, mollis ante vitae, malesuada erat. Cras nisi lorem, molestie sit amet mi et, commodo lobortis tellus. Etiam id rhoncus justo, et consectetur odio. Aliquam erat volutpat. Curabitur risus tortor, varius vulputate luctus vitae, hendrerit quis lorem. Aliquam at hendrerit est, vel porta tellus. Proin massa magna, sagittis eget est et, ultricies gravida elit. Aliquam erat volutpat. Morbi quam augue, interdum id ornare vitae, pellentesque a justo. Fusce ipsum diam, vehicula pharetra nunc non, maximus iaculis risus. Ut nisi sapien, interdum a semper at, semper id massa. Duis eget augue at felis placerat dignissim.</p>
+                <img src="/img/blogPic2.jpg">
+                <p>Maecenas feugiat mauris vitae metus malesuada dignissim. Phasellus hendrerit nunc quis ornare iaculis. Etiam orci quam, condimentum et lacus vulputate, rutrum faucibus lacus. Pellentesque quis ipsum vel leo fringilla facilisis. Pellentesque non justo eu metus hendrerit porttitor eu et risus. Proin massa lacus, sagittis ut tempus id, imperdiet quis ante. Cras mattis sapien quis leo facilisis, faucibus consectetur magna condimentum. Integer metus ipsum, sagittis et ultricies varius, porttitor nec nisl. Donec malesuada dui eu libero gravida, ac posuere tellus varius. Suspendisse turpis metus, vulputate in posuere at, sollicitudin sed mauris. Vestibulum condimentum lacus eget lorem iaculis posuere. Cras ut justo feugiat ipsum mollis sodales sit amet at dui. Nunc placerat vel elit sit amet fermentum. Etiam id ullamcorper dolor. Maecenas tristique tortor ac nulla egestas, ac semper ipsum consequat.</p>
+            </article>
+            
+        
+        </section>
+    
+    
+    </body>
+</html>
