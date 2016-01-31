@@ -204,3 +204,32 @@ textarea:focus {
   width: 100%;
   background-color: white;
 }
+
+
+#owl .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/*=======Owl image carousel=======*/
+#owl{
+  max-width: 47vw;
+}
+.owl-theme .owl-controls .owl-buttons div{
+    border: #fbfbfb solid 4px;
+  cursor: pointer;
+  background-color: #10b3b1;
+  color: white;
+  display: inline-block;
+  zoom: 1;
+  padding: 3px 10px;
+  font-size: 18px;
+  margin: 4px;
+  font-family:'Open Sans', FontAwesome;
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+  background-color: #fff;
+  color: #10b3b1;
+}
