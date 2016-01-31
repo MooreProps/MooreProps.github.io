@@ -1,0 +1,45 @@
+@media (max-width: 720px), (max-device-width: 56em)  {
+  body{
+  	margin-top: 1em;
+  }
+  nav{
+  	background:rgba(255, 255, 255, 0.9);
+  	position:fixed;
+    top:0;
+    left:0;
+    min-height:100%;
+    width: 65vw;
+    z-index:40;
+  	-webkit-transform: translateX(-200%);
+    -moz-transform: translateX(-200%);
+    transform: translateX(-200%);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    -moz-transition: -moz-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+  }
+  #container{
+  	left: 0;
+  	margin-left: 0;
+  	max-width:100%;
+  }
+  #owl{
+  	max-width:90vw;
+  }
+  #toggle{
+display: block;
+}
+}
+
+#nav-toggle:checked ~ #overlay {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+}
+#nav-toggle:checked ~ nav {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    transform: translateX(0);
+}
+#nav-toggle:checked ~ #toggle {
+    color: white;
+}

@@ -3,6 +3,10 @@ background: fixed center no-repeat black;
 transition: background 2s ease-in-out;
 font-family: 'Open Sans', sans-serif;
 margin-top: 5em;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
 *:visited{
@@ -13,8 +17,35 @@ h2, h3{
 color: #10b3b1;
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 30;
+    background: rgba(31, 31, 31, 0.75);
+    width: 100vw;
+    height: 100vh;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    -moz-transition: -moz-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
+}
 /*=======Nav bar======*/
-
+#nav-toggle {
+    display: none;
+}
+#toggle {
+    position: fixed;
+    z-index: 100;
+    top: 1%;
+    right:0%;
+    display: none;
+    color: #10b3b1;
+    font-size: 2em;
+}
 nav{
  background:rgba(255, 255, 255, 0.8);
     width:250px;
@@ -94,12 +125,6 @@ margin: 30px;
 article img{
 max-width: 100%;
      
-}
-
-
-.date {
-    font-size: 13px;
-    color: dimgray;
 }
 
 .BlogPost {
