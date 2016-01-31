@@ -44,6 +44,9 @@ float: left;
 height: auto;
 width: 90%;
 }
+.BlogPost{
+	width: 80%;
+}
 }
 
 #nav-toggle:checked ~ #overlay {
