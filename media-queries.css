@@ -17,16 +17,32 @@
     -moz-transition: -moz-transform 0.25s ease-in-out;
     transition: transform 0.25s ease-in-out;
   }
+  nav a{
+  	font-size: 4em;
+  }
+  article{
+  	font-size: 2em;
+  }
+  .fa {
+  	font-size: 2em;
+  }
   #container{
   	left: 0;
   	margin-left: 0;
   	max-width:100%;
+  	min-height: 100%;
   }
   #owl{
   	max-width:90vw;
   }
   #toggle{
 display: block;
+
+}
+#about-img{
+float: left;
+height: auto;
+width: 90%;
 }
 }
 
