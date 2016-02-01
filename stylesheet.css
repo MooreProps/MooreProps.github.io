@@ -281,9 +281,11 @@ textarea:focus {
   max-width: 47vw;
 }
 #owl .item img{
+    text-align: center;
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+    max-height: 40vw;
 }
 .owl-theme .owl-controls .owl-buttons div{
     border: #fbfbfb solid 4px;
