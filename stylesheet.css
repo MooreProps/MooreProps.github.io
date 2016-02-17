@@ -159,6 +159,7 @@ text-decoration: none;
   padding: none;
 }
 
+
 #contact-n p{
 line-height: 170%;
 }
@@ -169,6 +170,19 @@ color: #fff;
 background-color: #10b3b1;
 padding: 50px;
 width: 85%;
+}
+#contact-n a{
+text-decoration: none;
+color: #000;
+-webkit-transition: all 0.5s ease;
+   -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+}
+#contact-n a:hover{
+text-decoration: underline;
+color: #10b3b1;
 }
 #contact-social{
     text-align: center;
