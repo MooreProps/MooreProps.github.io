@@ -6,6 +6,7 @@ body{
 background: fixed center no-repeat black;
 transition: background 2s ease-in-out;
 font-family: 'Open Sans', sans-serif;
+font-weight: 200;
 margin-top: 5em;
 -webkit-background-size: cover;
 -moz-background-size: cover;
@@ -156,7 +157,6 @@ text-decoration: none;
 
 .BlogPost img{
   padding: none;
-
 }
 
 #contact-n p{
@@ -281,11 +281,13 @@ textarea:focus {
   max-width: 47vw;
 }
 #owl .item img{
-    text-align: center;
     display: block;
     max-width: 100%;
     height: auto;
-    max-height: 40vw;
+    max-height: 70vh;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .owl-theme .owl-controls .owl-buttons div{
     border: #fbfbfb solid 4px;
