@@ -20,7 +20,7 @@ function doSlideshow(){
       navigationText : ["&#xf0d9; prev", "next &#xf0da;"],
       slideSpeed : 300,
       paginationSpeed : 400,
-      singleItem:true,
+      singleItem: true,
       autoHeight : true
   });
  
