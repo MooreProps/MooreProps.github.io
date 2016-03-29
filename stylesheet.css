@@ -301,6 +301,7 @@ textarea:focus {
     max-height: 70vh;
     margin-left: auto;
     margin-right: auto;
+    image-orientation: from-image;
 
 }
 .owl-theme .owl-controls .owl-buttons div{
